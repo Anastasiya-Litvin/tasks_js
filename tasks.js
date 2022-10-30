@@ -1,6 +1,11 @@
 'user strict'
 
-function findAverage(array) {
-    if (array.length === 0) return 0
-    else return array.reduce((sum, current) => sum + current, 0) / array.length
+function highAndLow(numbers){
+    function highAndLow(numbers){
+        let array = numbers.split(" ");
+        let arraySort = array.sort((a, b) => a - b)   
+        let res = `${arraySort[arraySort.length-1]}`+ ' ' + `${arraySort[0]}`
+        return res
+    }
 }
+highAndLow('1 2 8 -2 9 25')
